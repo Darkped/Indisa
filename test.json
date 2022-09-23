@@ -1,0 +1,278 @@
+{
+  "resourceType" : "Observation",  
+  "status" : "final",
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationCategory",
+          "code" : "laboratorio",
+          "display" : "Laboratorio"
+        }
+      ]
+    }
+  ],
+  "code" : {
+    "coding" : [
+      {
+        "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/CodesFonasa",
+        "code" : "301045",
+        "display" : "HEMOGRAMA"
+      }
+    ]
+  },
+  "subject" : {
+    "reference" : "Patient/{{Patient.ResourceId}}"
+  },
+  "effectiveDateTime" : "2021-02-25T09:45:00-05:00",
+  "component" : [
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "6690-2",
+            "display" : "Leukocytes [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 6.5,
+        "unit" : "10*3/uL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "N",
+              "display" : "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "4.0 - 10.0"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "789-8",
+            "display" : "Erythrocytes [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 4.5,
+        "unit" : "10*6/uL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "N",
+              "display" : "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "3.5 - 5.5"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "718-7",
+            "display" : "Hemoglobin [Mass/volume] in Blood"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 10.7,
+        "unit" : "g/dL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "L",
+              "display" : "Bajo"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "11.0 - 16.0"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "4544-3",
+            "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 60,
+        "unit" : "%"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "H",
+              "display" : "Alto"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "37 - 54"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "787-2",
+            "display" : "MCV [Entitic volume] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 85.5,
+        "unit" : "fL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "N",
+              "display" : "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "80 - 100"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "785-6",
+            "display" : "MCH [Entitic mass] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 30.4,
+        "unit" : "pg"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "N",
+              "display" : "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "27 - 34"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "786-4",
+            "display" : "MCHC [Mass/volume] by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 30.3,
+        "unit" : "g/dL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "L",
+              "display" : "Bajo"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "32 - 36"
+        }
+      ]
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "http://loinc.org",
+            "code" : "777-3",
+            "display" : "Platelets [#/volume] in Blood by Automated count"
+          }
+        ]
+      },
+      "valueQuantity" : {
+        "value" : 110.5,
+        "unit" : "10*3/uL"
+      },
+      "interpretation" : [
+        {
+          "coding" : [
+            {
+              "system" : "https://kliniccdr-dev.azurewebsites.net/api/r4/CodeSystem/ObservationInterpretation",
+              "code" : "N",
+              "display" : "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange" : [
+        {
+          "text" : "100 - 300"
+        }
+      ]
+    }
+  ]
+}
